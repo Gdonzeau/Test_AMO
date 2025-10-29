@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		F005BB632EB200A500527B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F005BB3B2EB17A9400527B9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F005BB422EB17A9400527B9B;
+			remoteInfo = Test_AMO;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F005BB432EB17A9400527B9B /* Test_AMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_AMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F005BB5F2EB200A500527B9B /* Test_AMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = Test_AMO;
 			sourceTree = "<group>";
 		};
+		F005BB602EB200A500527B9B /* Test_AMOTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test_AMOTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F005BB402EB17A9400527B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F005BB5C2EB200A500527B9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				F005BB452EB17A9400527B9B /* Test_AMO */,
+				F005BB602EB200A500527B9B /* Test_AMOTests */,
 				F005BB442EB17A9400527B9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F005BB432EB17A9400527B9B /* Test_AMO.app */,
+				F005BB5F2EB200A500527B9B /* Test_AMOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = F005BB432EB17A9400527B9B /* Test_AMO.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F005BB5E2EB200A500527B9B /* Test_AMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F005BB652EB200A500527B9B /* Build configuration list for PBXNativeTarget "Test_AMOTests" */;
+			buildPhases = (
+				F005BB5B2EB200A500527B9B /* Sources */,
+				F005BB5C2EB200A500527B9B /* Frameworks */,
+				F005BB5D2EB200A500527B9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F005BB642EB200A500527B9B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F005BB602EB200A500527B9B /* Test_AMOTests */,
+			);
+			name = Test_AMOTests;
+			packageProductDependencies = (
+			);
+			productName = Test_AMOTests;
+			productReference = F005BB5F2EB200A500527B9B /* Test_AMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					F005BB422EB17A9400527B9B = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					F005BB5E2EB200A500527B9B = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = F005BB422EB17A9400527B9B;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				F005BB422EB17A9400527B9B /* Test_AMO */,
+				F005BB5E2EB200A500527B9B /* Test_AMOTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F005BB412EB17A9400527B9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F005BB5D2EB200A500527B9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F005BB5B2EB200A500527B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F005BB642EB200A500527B9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F005BB422EB17A9400527B9B /* Test_AMO */;
+			targetProxy = F005BB632EB200A500527B9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F005BB4C2EB17A9600527B9B /* Debug */ = {
@@ -302,6 +377,42 @@
 			};
 			name = Release;
 		};
+		F005BB662EB200A500527B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S47Y9QMPN2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.gdtr.Test-AMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_AMO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_AMO";
+			};
+			name = Debug;
+		};
+		F005BB672EB200A500527B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S47Y9QMPN2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.gdtr.Test-AMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_AMO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_AMO";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +430,15 @@
 			buildConfigurations = (
 				F005BB4F2EB17A9600527B9B /* Debug */,
 				F005BB502EB17A9600527B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F005BB652EB200A500527B9B /* Build configuration list for PBXNativeTarget "Test_AMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F005BB662EB200A500527B9B /* Debug */,
+				F005BB672EB200A500527B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

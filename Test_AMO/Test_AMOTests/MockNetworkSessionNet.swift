@@ -1,5 +1,13 @@
+//
+//  MockNetworkSessionNet.swift
+//  Test_AMO
+//
+//  Created by Guillaume on 29/10/2025.
+//
+
+
 import Foundation
-@testable import RegisterUUID
+@testable import Test_AMO
 
 class MockNetworkSessionNet: NetworkInterface {
     private var urlSession: URLSession

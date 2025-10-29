@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Test_AMO
 
 final class Test_AMOTests: XCTestCase {
 

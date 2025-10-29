@@ -9,14 +9,14 @@ import Foundation
 
 struct ApiData {
     static let search: String = "https://api.pexels.com/v1/search?query="
-    static let navigationSearch:String = "https://api.pexels.com/v1/search?page="
-    //static let navigationSearch:String = "https://api.pexels.com/v1/search?page=2&per_page=15&query=nature"
+    static let navigationSearch: String = "https://api.pexels.com/v1/search?page="
     
-    static let ApiKey: String = "Put your key" //"YOUR_API_KEY_HERE"
+    // Récupération depuis Info.plist
+    static let ApiKey: String = {
+        guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String,
+              !apiKey.isEmpty else {
+            fatalError("API_KEY manquante dans Info.plist. Vérifiez votre configuration.")
+        }
+        return apiKey
+    }()
 }
-
-#if DEBUG
-//This key
-#else
-// Other key
-#endif

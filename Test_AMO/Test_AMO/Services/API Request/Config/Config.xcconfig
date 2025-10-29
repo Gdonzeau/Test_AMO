@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  Test_AMO
+//
+//  Created by Guillaume on 29/10/2025.
+//
+
+// Configuration de base - à commiter
+API_KEY = $(API_KEY_VALUE)
+
+// Sert de template pour les autres développeurs
+// La vraie valeur vient de Debug.xcconfig ou Release.xcconfig

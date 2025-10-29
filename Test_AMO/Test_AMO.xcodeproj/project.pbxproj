@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F005BB842EB2302C00527B9B /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F005BB832EB2302C00527B9B /* Resolver */; };
-		F005BB862EB2302C00527B9B /* Resolver-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F005BB852EB2302C00527B9B /* Resolver-Dynamic */; };
-		F005BB882EB2302C00527B9B /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = F005BB872EB2302C00527B9B /* Resolver-Static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +25,22 @@
 		F005BB5F2EB200A500527B9B /* Test_AMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F0EB26712EB281A1001899BD /* Exceptions for "Test_AMO" folder in "Test_AMO" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Test-AMO-Info.plist",
+			);
+			target = F005BB422EB17A9400527B9B /* Test_AMO */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F005BB452EB17A9400527B9B /* Test_AMO */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F0EB26712EB281A1001899BD /* Exceptions for "Test_AMO" folder in "Test_AMO" target */,
+			);
 			path = Test_AMO;
 			sourceTree = "<group>";
 		};
@@ -45,8 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F005BB862EB2302C00527B9B /* Resolver-Dynamic in Frameworks */,
-				F005BB882EB2302C00527B9B /* Resolver-Static in Frameworks */,
 				F005BB842EB2302C00527B9B /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,8 +109,6 @@
 			name = Test_AMO;
 			packageProductDependencies = (
 				F005BB832EB2302C00527B9B /* Resolver */,
-				F005BB852EB2302C00527B9B /* Resolver-Dynamic */,
-				F005BB872EB2302C00527B9B /* Resolver-Static */,
 			);
 			productName = Test_AMO;
 			productReference = F005BB432EB17A9400527B9B /* Test_AMO.app */;
@@ -338,6 +345,8 @@
 		};
 		F005BB4F2EB17A9600527B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F005BB452EB17A9400527B9B /* Test_AMO */;
+			baseConfigurationReferenceRelativePath = "Services/API Request/Config/Debug.xcconfig";
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +355,7 @@
 				DEVELOPMENT_TEAM = S47Y9QMPN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-AMO-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -366,6 +376,8 @@
 		};
 		F005BB502EB17A9600527B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F005BB452EB17A9400527B9B /* Test_AMO */;
+			baseConfigurationReferenceRelativePath = "Services/API Request/Config/Release.xcconfig";
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +386,7 @@
 				DEVELOPMENT_TEAM = S47Y9QMPN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-AMO-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -394,6 +407,8 @@
 		};
 		F005BB662EB200A500527B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F005BB452EB17A9400527B9B /* Test_AMO */;
+			baseConfigurationReferenceRelativePath = "Services/API Request/Config/Debug.xcconfig";
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +427,8 @@
 		};
 		F005BB672EB200A500527B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F005BB452EB17A9400527B9B /* Test_AMO */;
+			baseConfigurationReferenceRelativePath = "Services/API Request/Config/Release.xcconfig";
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -476,16 +493,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F005BB822EB2302C00527B9B /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
-		};
-		F005BB852EB2302C00527B9B /* Resolver-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F005BB822EB2302C00527B9B /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Dynamic";
-		};
-		F005BB872EB2302C00527B9B /* Resolver-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F005BB822EB2302C00527B9B /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Static";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

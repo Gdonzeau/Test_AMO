@@ -13,11 +13,12 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-# Config files with secrets
+# Config files with secrets - NE JAMAIS COMMITER
+**/Debug.xcconfig
+**/Release.xcconfig
+**/Secrets.xcconfig
 *.xcconfig.debug
-Debug.xcconfig
-Release.xcconfig
-Secrets.xcconfig
+**/*.secrets.xcconfig
 
 ## Playgrounds
 timeline.xctimeline

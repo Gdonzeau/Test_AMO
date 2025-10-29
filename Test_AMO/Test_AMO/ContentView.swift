@@ -9,19 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
+    @State private var searchText: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TextField("Search", text: $searchText)
             
-            Button {
-                Task {
-                    await viewModel.search()
+            if !viewModel.isSearching {
+                Button {
+                    Task {
+                        await viewModel.search(query: searchText)
+                    }
+                } label: {
+                    Text("Search")
                 }
-            } label: {
-                Text("Search")
+            } else {
+                ProgressView()
+            }
+            
+            ScrollView {
+                ForEach(viewModel.photos) { photo in
+                    if let imageURL = URL(string: photo.src.tiny) {
+                        AsyncImage(url: imageURL)
+                    } else {
+                        Text("Loading...")
+                    }
+                    
+                }
             }
         }
         .padding()

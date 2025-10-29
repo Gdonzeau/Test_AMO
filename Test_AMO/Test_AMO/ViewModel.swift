@@ -9,12 +9,18 @@ import Foundation
 
 class ViewModel: ObservableObject {
     let callApiService = CallApi()
+    @Published var isSearching = false
+    @Published var photos: [Photo] = []
     
-    func search() async {
+    func search(query: String = "nature") async {
         do {
-            try await callApiService.search(query: "nature")
+            try await callApiService.search(query: query)
+            //photos = self.callApiService.photos
         } catch {
             print("Error while searching")
         }
+//        DispatchQueue.main.async { [self] in
+//            photos = self.callApiService.photos
+//        }
     }
 }

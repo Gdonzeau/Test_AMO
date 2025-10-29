@@ -8,5 +8,9 @@
 // Configuration de base - à commiter
 API_KEY = $(API_KEY_VALUE)
 
+// Injection dans Info.plist via INFOPLIST_KEY
+// INFOPLIST_KEY_API_KEY permet d'injecter la valeur dans Info.plist
+INFOPLIST_KEY_API_KEY = $(API_KEY_VALUE)
+
 // Sert de template pour les autres développeurs
 // La vraie valeur vient de Debug.xcconfig ou Release.xcconfig

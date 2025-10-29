@@ -25,22 +25,9 @@
 		F005BB5F2EB200A500527B9B /* Test_AMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F0EB26712EB281A1001899BD /* Exceptions for "Test_AMO" folder in "Test_AMO" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Test-AMO-Info.plist",
-			);
-			target = F005BB422EB17A9400527B9B /* Test_AMO */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F005BB452EB17A9400527B9B /* Test_AMO */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F0EB26712EB281A1001899BD /* Exceptions for "Test_AMO" folder in "Test_AMO" target */,
-			);
 			path = Test_AMO;
 			sourceTree = "<group>";
 		};

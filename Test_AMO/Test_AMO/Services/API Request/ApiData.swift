@@ -12,5 +12,11 @@ struct ApiData {
     static let navigationSearch:String = "https://api.pexels.com/v1/search?page="
     //static let navigationSearch:String = "https://api.pexels.com/v1/search?page=2&per_page=15&query=nature"
     
-    static let ApiKey: String = "YOUR_API_KEY_HERE"
+    static let ApiKey: String = "Put your key" //"YOUR_API_KEY_HERE"
 }
+
+#if DEBUG
+//This key
+#else
+// Other key
+#endif

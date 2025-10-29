@@ -8,7 +8,12 @@
 import Foundation
 
 class ViewModel: ObservableObject {
-    let callApiService = CallApi()
+    private var callApiService = CallApi()
+    
+    init(callApiService: CallApi = CallApi()) {
+        self.callApiService = callApiService
+    }
+    
     @Published var isSearching = false
     @Published var photos: [Photo] = []
     

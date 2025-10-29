@@ -69,6 +69,7 @@ class CallApi: ObservableObject {
         } catch {
             print("05b")
             self.error = NetworkErrors.decodingError
+            let errorText = NetworkErrors.decodingError.errorDescription ?? "Unknown error"
             self.isError = true
             throw NetworkErrors.decodingError
         }

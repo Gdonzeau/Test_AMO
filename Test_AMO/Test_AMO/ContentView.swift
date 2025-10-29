@@ -29,10 +29,13 @@ struct ContentView: View {
             
             ScrollView {
                 ForEach(viewModel.photos) { photo in
-                    if let imageURL = URL(string: photo.src.tiny) {
-                        AsyncImage(url: imageURL)
-                    } else {
-                        Text("Loading...")
+//                    if let imageURL = URL(string: photo.src.tiny) {
+//                        AsyncImage(url: imageURL)
+//                    } else {
+//                        Text("Loading...")
+//                    }
+                    ForEach(viewModel.photos) { photo in
+                        PhotoThumbnailView(photo: photo)
                     }
                     
                 }

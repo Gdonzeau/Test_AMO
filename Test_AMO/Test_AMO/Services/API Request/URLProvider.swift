@@ -22,4 +22,8 @@ class DefaultURLProvider: URLProvider {
         return URL(string: ApiData.navigationSearch + "\(page)" + "&per_page=\(perPage)" + "&query=\(query)")
     }
     
+    func navigationSearch2(page: Int, perPage: Int, query: String) -> URL? {
+        return URL(string: ApiData.navigationSearch + "\(page)" + "&per_page=\(perPage)" + "&query=\(query)")
+    }
+    
 }

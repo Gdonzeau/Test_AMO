@@ -10,6 +10,10 @@ import Foundation
 @testable import Test_AMO
 
 class MockNetworkSessionNet: NetworkInterface {
+    func fetchData(request: URLRequest) async throws -> Data {
+        <#code#>
+    }
+    
     private var urlSession: URLSession
     
     init(urlSession: URLSession = URLSession(configuration: .default)) {

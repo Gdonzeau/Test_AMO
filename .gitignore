@@ -13,6 +13,12 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
+# Config files with secrets
+*.xcconfig.debug
+Debug.xcconfig
+Release.xcconfig
+Secrets.xcconfig
+
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
